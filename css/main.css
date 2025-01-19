@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;800&display=swap');
+
+:root {
+  --font-pop: "Poppins", serif;
+  --font-monts: "Montserrat", serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  position: relative;
+  min-width: 100%;
+  min-height: 1200px;
+  background: url(../img/layer-1.png)no-repeat center/cover;
+  transform-style: preserve-3d;
+}
+
+.layer {
+  width: 100%;
+  position: absolute;
+}
+
+.haeader__layer-1 {
+  top: 45rem;
+  min-height: 1400px;
+  background: url(../img/layer-2.png)no-repeat center/cover;
+}
+
+.haeader__layer-2 {
+  top: 90rem;
+  min-height: 1000px;
+  background: url(../img/layer-3.png)no-repeat;
+  background-size: cover;
+  background-position: 25% top;
+}
+
+/* .haeader__layer-3 {
+  background: url(../img/layer-2.png);
+} */
