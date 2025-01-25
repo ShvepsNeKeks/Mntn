@@ -3,39 +3,105 @@
 :root {
   --font-pop: "Poppins", serif;
   --font-monts: "Montserrat", serif;
+
+  --color-hero: #0B1D26;
+  --color-text: rgb(255, 255, 255);
 }
 
 html {
   font-size: 62.5%;
 }
 
-header {
-  position: relative;
-  min-width: 100%;
-  min-height: 1200px;
-  background: url(../img/layer-1.png)no-repeat center/cover;
-  transform-style: preserve-3d;
+body {
+  background-color: var(--color-hero);
+  font-size: 1.6rem;
+  font-family: var(--font-monts);
 }
 
-.layer {
+/* Мульти-блоки */
+.call {}
+
+
+/* Параллакс */
+.hero-section__parallax-container {}
+
+.layer {}
+
+.hero-section__layer-1 {}
+
+.hero-section__layer-2 {}
+
+.hero-section__layer-3 {}
+
+
+/* Шапка */
+.header {}
+
+.header__container {
+  margin: 0 auto;
+  max-width: 1760px;
   width: 100%;
-  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 2rem;
 }
 
-.haeader__layer-1 {
-  top: 45rem;
-  min-height: 1400px;
-  background: url(../img/layer-2.png)no-repeat center/cover;
+.header__container,
+.header__link-list {
+  display: flex;
+  justify-content: space-between;
 }
 
-.haeader__layer-2 {
-  top: 90rem;
-  min-height: 1000px;
-  background: url(../img/layer-3.png)no-repeat;
-  background-size: cover;
-  background-position: 25% top;
+.header__logo-wrapper {}
+
+.header__logo {}
+
+.header__nav {}
+
+.header__link-list {
+  gap: 4rem;
 }
 
-/* .haeader__layer-3 {
-  background: url(../img/layer-2.png);
-} */
+.header__list-item {}
+
+.header__link {
+  color: var(--color-text);
+}
+
+.header__user-acc {}
+
+.header__acc-icon {}
+
+.header__link-acc {
+  color: var(--color-text);
+}
+
+
+/* Заголовки и списки-ссылки */
+.hero-section {}
+
+.hero-section__container {}
+
+.hero-section__socials {}
+
+.socials-title {}
+
+.socials__link-wrapper {}
+
+.socials__icon {}
+
+.hero-section__wrapper-title {}
+
+.hero-section__call {}
+
+.hero-section__h1 {}
+
+.hero-section__scroll-link {}
+
+.hero-section__nav {}
+
+.hero-section__list-nav {}
+
+.hero-section__list-item {}
+
+.hero-section__anchor-link {}
