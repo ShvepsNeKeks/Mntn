@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,21 +22,51 @@ body {
 /* Мульти-блоки */
 .call {}
 
+.
+
 
 /* Параллакс */
-.hero-section__parallax-container {}
+.hero-section__parallax-container {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  perspective: 1px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
-.layer {}
+.layer {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  will-change: transform;
+}
 
-.hero-section__layer-1 {}
 
-.hero-section__layer-2 {}
+.hero-section__layer-1 {
+  top: 40vh;
+  background: url(../img/layer-2.png)no-repeat;
+  background-position: center top;
+  background-size: cover;
+  transform: translateZ(.2px);
+}
 
-.hero-section__layer-3 {}
+.hero-section__layer-2 {
+  top: 65vh;
+  background: url(../img/layer-3.png)no-repeat;
+  background-position: 30% -10%;
+  background-size: cover;
+  transform: translateZ(.1px);
+}
 
 
 /* Шапка */
-.header {}
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 5vh;
+  min-width: 100%;
+}
 
 .header__container {
   margin: 0 auto;
@@ -77,10 +108,18 @@ body {
 }
 
 
-/* Заголовки и списки-ссылки */
-.hero-section {}
+/*Главная секция, заголовки и списки-ссылки */
+.hero-section {
+  position: relative;
+  background: url(../img/layer-1.png)no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
 
-.hero-section__container {}
+.hero-section__container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .hero-section__socials {}
 
@@ -105,3 +144,8 @@ body {
 .hero-section__list-item {}
 
 .hero-section__anchor-link {}
+
+
+.test {
+  height: 1500px;
+}
